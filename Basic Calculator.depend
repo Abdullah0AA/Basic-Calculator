@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1649624717 source:e:\freecodecamp c in 4 hours\basic calculator\main.c
+	<stdio.h>
+	<stdlib.h>
+
