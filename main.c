@@ -1,35 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct student
+{
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
 int main()
 {
-    double num1;
-    double num2;
-    char op;
-    printf("Enter first number: ");
-    scanf("%lf", &num1);
+    struct student student1;
+    student1.age = 22;
+    student1.gpa = 3.2;
+    strcpy(student1.name,"Jim");
+    strcpy(student1.major, "technik");
 
-    printf("Enter operator as +,-,/ or *: ");
-    scanf(" %c", &op);
-
-    printf("Enter second number: ");
-    scanf("%lf", &num2);
-
-    if (op == '+'){
-        printf("%f", num1 + num2);
-    }
-    else if (op == '-'){
-        printf("%f", num1 - num2);
-    }
-    else if (op == '*'){
-        printf("%f", num1*num2);
-    }
-    else if (op == '/'){
-        printf("%f", num1/num2);
-    }
-    else {
-        printf(" Invalid Operator");
-    }
-
+    printf("%s", student1.name);
     return 0;
 }
